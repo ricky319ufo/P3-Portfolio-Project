@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ricky's Portfolio - Mobile Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="card card-pad">
+      <h1 class="heading-display">Mobile Project</h1>
+      <p class="paragraph-body">
+        A mobile-focused concept where users explore content and save interesting results.
+      </p>
+
+      <nav class="main-nav">
+        <a class="main-nav-home" href="index.html">Home</a>
+        <div class="main-nav-links">
+          <a href="about.html">About Me</a>
+          <a href="museum-project.html">Museum Project</a>
+          <a href="mobile-project.html">Mobile Project</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="element">
+      <h2 class="heading-section">Project Overview</h2>
+      <p class="paragraph-body">
+        This project imagines a simple flow: browse, capture or choose content, and get a clean
+        summary view.
+      </p>
+    </section>
+
+    <section class="element">
+      <h2 class="heading-section">Screens (placeholder)</h2>
+      <div class="project-image-container">
+        <section>
+          <h3 class="heading-card">Login / Entry</h3>
+          <p class="paragraph-body">A clean entry screen with clear next steps.</p>
+          <img
+            class="image-link"
+            src="img/Foodie Buddy Project/foodie_buddy_login_page.PNG"
+            alt="Placeholder login page screenshot"
+          />
+        </section>
+
+        <section>
+          <h3 class="heading-card">Feeds</h3>
+          <p class="paragraph-body">A feed layout for discovering posts and updates.</p>
+          <img
+            class="image-link"
+            src="img/Foodie Buddy Project/foodie_buddy_feeds.PNG"
+            alt="Placeholder feeds page screenshot"
+          />
+        </section>
+      </div>
+
+      <p class="paragraph-body">
+        Back to
+        <a class="link-text" href="index.html">Home</a> to view featured projects.
+      </p>
+    </section>
+
+    <footer class="element">
+      <p class="paragraph-body">© <span id="year"></span> 
+        Ricky Lee.
+        <a class="link-text" href="style-guide.html">View style guide</a>
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+

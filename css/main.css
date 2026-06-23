@@ -1,0 +1,271 @@
+/* P03 Portfolio CSS*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+
+body {
+  margin: 0;
+  font-family: "Figtree", sans-serif;
+  color: black;
+  background: #bfeac0;
+  margin: 2rem;
+}
+
+/* Shared utilities */
+.card {
+  background: white;
+  border: 0.05rem solid black;
+  border-radius: 0.75rem;
+}
+
+.card-pad {
+  padding: 1.25rem;
+}
+
+/* Page layout */
+header {
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 2.25rem;
+  letter-spacing: 0.02em;
+  margin: 0 0 0.5rem;
+}
+
+/* Sections */
+section {
+  padding: 1.25rem;
+}
+
+#interactive_elements,
+#text_elements,
+#combined_elements,
+#brand_elements {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.element {
+  background: white;
+  border: 0.05rem solid black;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin: 0 0 1rem;
+}
+
+.element h3 {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1.25rem;
+  margin: 0 0 0.75rem;
+}
+
+.element h4 {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1rem;
+  margin: 1rem 0 0.5rem;
+  color: #414354;
+}
+
+h2 {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1.75rem;
+  margin: 0 0 1rem;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+
+/* === Interactive Elements === */
+.link-text {
+  color: #46c238;
+  text-decoration: none;
+  text-underline-offset: 0.2em;
+}
+
+.link-text:hover {
+  color: #414354;
+}
+
+.button-nav {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border-radius: 20rem;
+  text-decoration: none;
+  font-weight: 600;
+  background: #bfeac0;
+  border: 0.05rem solid #a6acc2;
+  color: #1f1f1f;
+}
+
+.button-nav:hover {
+  background: #46c238;
+}
+
+.image-link {
+  display: inline-block;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 0.05rem solid black;
+  background: white;
+}
+
+.image-link img {
+  display: block;
+  max-height: 30rem;
+  max-width: 30rem;
+}
+
+.image-link:hover {
+  border-color: #414354;
+}
+
+/* === Text Elements === */
+.heading-display,
+.heading-section,
+.heading-card,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+.heading-display {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.heading-section {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.heading-card {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.paragraph-body,
+.body-text {
+  font-family: "Figtree",sans-serif;
+  font-size: 1rem;
+  color: black;
+}
+
+/* === Combined Elements === */
+nav.main-nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: white;
+  border: 0.05rem solid black;
+}
+
+.main-nav-home {
+  text-decoration: none;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 700;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.75rem;
+  background:  #bfeac0;
+  border: 0.05rem solid #46c238;
+  color: black;
+}
+
+.main-nav-home:hover {
+  background: #a6acc2;
+}
+
+.main-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.main-nav-links a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.45rem 0.7rem;
+  border-radius: 0.75rem;
+  border: 0.05rem solid black;
+  background: white;
+}
+
+.main-nav-links a:hover {
+  border-color:  #46c238;
+  background:  #bfeac0;
+}
+
+/* === Brand Elements === */
+.palette-container,
+.project-image-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.palette-container {
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  margin-top: 0.5rem;
+}
+
+.project-image-container {
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  margin-top: 0.75rem;
+}
+
+.palette-container section,
+.project-image-container section {
+  padding: 0.85rem;
+  border-radius: 0.75rem;
+  border: 0.05rem solid black;
+  background: white;
+}
+
+.circle {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 20rem;
+  margin-top: 0.75rem;
+  border: 0.05rem solid black;
+}
+
+.palette-green {
+  background: #46c238;
+}
+
+.palette-light-green {
+  background: #bfeac0;
+}
+
+.palette-gray {
+  background: #a6acc2;
+}
+
+.palette-dark-gray {
+  background: #414354;
+}
+
+.project-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.55rem;
+  border: 0.05rem solid black;
+}
+

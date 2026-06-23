@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ricky's Portfolio - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <a class="main-nav-home" href="index.html">Home</a>
+        <div class="main-nav-links">
+          <a href="about.html">About Me</a>
+          <a href="museum-project.html">Museum Project</a>
+          <a href="mobile-project.html">Mobile Project</a>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="element">
+      <h2 class="heading-section">Featured Projects</h2>
+
+      <p class="paragraph-body">
+        These are quick snapshots of projects I’m working on. Each page uses the same style guide
+        and responsive rem-based CSS.
+      </p>
+
+      <div class="project-image-container">
+        <section>
+          <h3 class="heading-card">Museum Project</h3>
+          <p class="paragraph-body">Interactive information panels and guided museum experiences.</p>
+          <a class="image-link" href="museum-project.html">
+            <img
+              src="img/Beaty Biodiversity Musemn Project/20.png"
+              alt="Placeholder museum project screenshot"
+            />
+          </a>
+        </section>
+
+        <section>
+          <h3 class="heading-card">Mobile Project</h3>
+          <p class="paragraph-body">A mobile concept for finding and learning through images.</p>
+          <a class="image-link" href="mobile-project.html">
+            <img
+              src="img/Foodie Buddy Project/IMG_1914.PNG"
+              alt="Placeholder mobile project screenshot"
+            />
+          </a>
+        </section>
+      </div>
+    </section>
+
+    <footer class="element">
+      <p class="paragraph-body">© <span id="year"></span> 
+        Ricky Lee.
+        <a class="link-text" href="style-guide.html">View style guide</a>
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+

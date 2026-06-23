@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Style Guide for Ricky Lee's Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <h1>P03 - Portfolio Style Guide</h1>
+
+      <p>
+        Style guides for Ricky Lee's portfolio
+      </p>
+
+      <nav>
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#brand_elements">Brand Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+      </nav>
+    </header>
+
+    <!-- INTERACTIVE ELEMENTS SECTION -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <section class="element">
+        <h3>In-text link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.link-text</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          Want to know more? &lt;a href="#" class="link-text"&gt;Click here&lt;/a&gt; to learn more about me.
+        </code>
+
+        <h4>Rendered element:</h4>
+        <p>
+          Want to know more? <a class="link-text" href="#">Click here</a> to learn more about me.
+        </p>
+      </section>
+
+      <section class="element">
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;a href="#" class="button-nav"&gt;Scroll to the Top&lt;/a&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Scroll to the Top</a>
+      </section>
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.image-link</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;a href="#" class="image-link"&gt; 
+          &lt;img src="img/Foodie Buddy Project/foodie_buddy_login_page.PNG" alt="A screenshot of the Foodie Buddy login page"&gt; &lt;/a&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <a href="#" class="image-link">
+          <img src="img/Foodie Buddy Project/foodie_buddy_login_page.PNG" alt="A screenshot of the Foodie Buddy login page">    
+        </a>
+      </section>
+    </section>
+
+    <!-- TEXT ELEMENTS SECTION -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+
+        <h4>CSS selectors:</h4>
+        <p>
+          h1.heading-display, h2.heading-section, h3.heading-card,
+          h4
+        </p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;h1 class="heading-display"&gt;Foodie Buddy Project&lt;/h1&gt; 
+          &lt;h2class="heading-section"&gt;Foodie Buddy Project&lt;/h2&gt; 
+          &lt;h3 class="heading-card"&gt;Foodie Buddy Project&lt;/h3&gt; 
+          &lt;h4&gt;Foodie Buddy Project&lt;/h4&gt; 
+        </code>
+
+        <h4>Rendered element:</h4>
+        <h1 class="heading-display"> Foodie Buddy Project </h1>
+        <h2 class="heading-section"> Foodie Buddy Project </h2>
+        <h3 class="heading-subtitle"> Foodie Buddy Project </h3>
+        <h4 class="heading-misc"> Foodie Buddy Project </h4>
+
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+
+        <h4>CSS selectors:</h4>
+        <p>p.paragraph-body</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;p class="paragraph-body"&gt;Foodie Buddy is a food-focused social app that lets users leave reviews of the restaurants and post them on the feed. The app incorporates the camera of the phone to let users take photos when creating a post; alternatively, the users can use the photos in the phone gallery to do so. The app also lets users search nearby restaurants with the built-in map.
+          &lt;/p&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <p class="paragraph-body">
+          Foodie Buddy is a food-focused social app that lets users leave reviews of the restaurants and post them on the feed. The app incorporates the camera of the phone to let users take photos when creating a post; alternatively, the users can use the photos in the phone gallery to do so. The app also lets users search nearby restaurants with the built-in map.
+        </p>
+      </section>
+
+    </section>
+
+    <!-- COMBINED ELEMENTS SECTION -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+
+        <h4>CSS selector:</h4>
+        <p>nav.main-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;nav class="main-nav"&gt; &lt;a href="/"class="main-nav-home"&gt;Ricky Lee&lt;/a&gt; 
+          &lt;div class="main-nav-links"&gt; &lt;a href="#"&gt;About Me&lt;/a&gt; 
+          &lt;a href="#"&gt;Museum Project&lt;/a&gt; 
+          &lt;a href="#"&gt;Mobile Project&lt;/a&gt; 
+          &lt;/div&gt; &lt;/nav&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <nav class="main-nav">
+          <a href="#" class="main-nav-home">Ricky Lee</a>
+          <div class="main-nav-links">
+            <a href="#">About Me</a>
+            <a href="#">Museum Project</a>
+            <a href="#">Mobile Project</a>
+          </div>
+        </nav>
+      </section>
+    </section>
+
+    <section id="brand_elements">
+      <h2>Brand Elements</h2>
+      <section class="element">
+          <h3>Fonts</h3>
+          <div>
+            <h4>Header and display fonts: Alegreya</h4>
+            <h1 class="heading-display"> Foodie Buddy Project </h1>
+          </div>
+          <div>
+            <h4>Body Text: Figtree</h4>
+            <p class="body-text"> Foodie Buddy Project </p>
+          </div>
+      </section>
+
+      <!-- BRAND ELEMENTS SECTION -->
+      <section class="element">
+        <h3>Colour Palette</h3>
+        <div class="palette-container">
+          <section>
+            <h4> Green </h4>
+            <p> #f27798 </p>
+            <div class = "circle palette-green"></div>
+          </section>
+          <section>
+            <h4> Light Green </h4>
+            <p> #f29977 </p>
+            <div class = "circle palette-light-green"></div>
+          </section>
+          <section>
+            <h4> Gray </h4>
+            <p> #a78bfa </p>
+            <div class = "circle palette-gray"></div>
+          </section>
+          <section>
+            <h4> Dark Gray </h4>
+            <p> #f27798 </p>
+            <div class = "circle palette-dark-gray"></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Project Images</h3>
+        <div class="project-image-container">
+          <section> 
+            <h4> Foodie Buddy register page</h4>
+            <img src="img/Foodie Buddy Project/foodie_buddy_creating _account.PNG" alt="A screenshot of the Foodie Buddy register page">  
+          </section>
+          <section>
+            <h4> Foodie Buddy feeds page </h4>
+            <img src="img/Foodie Buddy Project/foodie_buddy_feeds.PNG" alt="A screenshot of the Foodie Buddy feeds page">  
+          </section>
+          <section>
+            <h4> Foodie Buddy friend feeds page </h4>
+            <img src="img/Foodie Buddy Project/foodie_buddy_friend_feeds.PNG" alt="A screenshot of the Foodie Buddy friend feeds page">  
+          </section>
+          <section>
+            <h4> Foodie Buddy login page </h4>
+            <img src="img/Foodie Buddy Project/foodie_buddy_login_page.PNG" alt="A screenshot of the Foodie Buddy login page">  
+          </section>
+        </div>
+      </section>
+    </section>
+    
+  </body>
+</html>
