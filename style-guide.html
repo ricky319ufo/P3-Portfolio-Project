@@ -75,12 +75,12 @@
         <h4>Sample code:</h4>
         <code>
           &lt;a href="#" class="image-link"&gt; 
-          &lt;img src="img/Foodie Buddy Project/foodie_buddy_login_page.PNG" alt="A screenshot of the Foodie Buddy login page"&gt; &lt;/a&gt;
+          &lt;img src="img/Foodie Buddy Project/foodie buddy - friend profile.PNG" alt="A screenshot of the Foodie Buddy friend profile page"&gt; &lt;/a&gt;
         </code>
 
         <h4>Rendered element:</h4>
         <a href="#" class="image-link">
-          <img src="img/Foodie Buddy Project/foodie_buddy_login_page.PNG" alt="A screenshot of the Foodie Buddy login page">    
+          <img src="img/Foodie Buddy Project/foodie buddy - friend profile.PNG" alt="A screenshot of the Foodie Buddy friend profile page">    
         </a>
       </section>
     </section>
@@ -163,6 +163,38 @@
           </div>
         </nav>
       </section>
+
+      <section class="element">
+        <h3>Footer</h3>
+
+        <h4>CSS selector:</h4>
+        <p>footer.element</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;footer class="element"&gt;
+            &lt;p class="paragraph-body"&gt;© &lt;span id="year"&gt;&lt;/span&gt; Ricky Lee.
+            &lt;a class="link-text" href="style-guide.html"&gt;&#9670;View style guide&lt;/a&gt;
+            &lt;a class="link-text" href="citation.html"&gt;&#9670;View citations&lt;/a&gt;
+          &lt;/p&gt;
+        </code>
+
+
+        <h4>Rendered element:</h4>
+        <footer class="element">
+          <p class="paragraph-body">© <span id="year"></span> Ricky Lee.
+            <a class="link-text" href="style-guide.html">◆ View style guide </a>
+            <a class="link-text" href="citation.html">◆ View citations </a>
+          </p>
+        </footer>
+
+      </section>
+    </section>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
     </section>
 
     <section id="brand_elements">
@@ -205,29 +237,9 @@
           </section>
         </div>
       </section>
-
-      <section class="element">
-        <h3>Project Images</h3>
-        <div class="project-image-container">
-          <section> 
-            <h4> Foodie Buddy register page</h4>
-            <img src="img/Foodie Buddy Project/foodie_buddy_creating _account.PNG" alt="A screenshot of the Foodie Buddy register page">  
-          </section>
-          <section>
-            <h4> Foodie Buddy feeds page </h4>
-            <img src="img/Foodie Buddy Project/foodie_buddy_feeds.PNG" alt="A screenshot of the Foodie Buddy feeds page">  
-          </section>
-          <section>
-            <h4> Foodie Buddy friend feeds page </h4>
-            <img src="img/Foodie Buddy Project/foodie_buddy_friend_feeds.PNG" alt="A screenshot of the Foodie Buddy friend feeds page">  
-          </section>
-          <section>
-            <h4> Foodie Buddy login page </h4>
-            <img src="img/Foodie Buddy Project/foodie_buddy_login_page.PNG" alt="A screenshot of the Foodie Buddy login page">  
-          </section>
-        </div>
-      </section>
     </section>
-    
+
   </body>
 </html>
+
+

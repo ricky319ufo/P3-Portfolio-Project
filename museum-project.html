@@ -13,65 +13,197 @@
     <link href="css/main.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="card card-pad">
-      <h1 class="heading-display">Museum Project</h1>
-      <p class="paragraph-body">
-        An interactive concept for guiding visitors through exhibits with helpful panels and small
-        activities.
-      </p>
-
+    <header>
       <nav class="main-nav">
-        <a class="main-nav-home" href="index.html">Home</a>
+        <a class="link-text-title" href="index.html">Ricky Lee's Portfolio</a>
         <div class="main-nav-links">
+          <div class="dropdown">
+            <button class="button-nav" type="button">Projects</button>
+            <div class="dropdown-content">
+              <a href="museum-project.html">Museum Project</a>
+              <a href="mobile-project.html">Mobile Project</a>
+            </div>
+          </div>
           <a href="about.html">About Me</a>
-          <a href="museum-project.html">Museum Project</a>
-          <a href="mobile-project.html">Mobile Project</a>
+          <a href="contact.html">Contact</a>
         </div>
       </nav>
     </header>
 
+    <h1 class="heading-display">Beaty Biodiversity Museum Project</h1>
+
     <section class="element">
-      <h2 class="heading-section">Project Overview</h2>
-      <p class="paragraph-body">
-        The goal is to make museum content easier to understand. The experience supports quick
-        scanning, optional deeper reading, and lightweight interaction.
-      </p>
+      <h2 class="heading-display">Project Overview</h2>
+      <div class="project-image-container">
+      <!-- Use https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Autoplay to learn how to 
+       auto play webm, the brower blocks autoplay if it is not muted, lazy loading causes the browser
+       to load the webm only when it is in view -->
+        <figure>
+          <video autoplay loop muted>
+            <source src="img/Beaty Biodiversity Musemn Project/interactive information panel 2 - an overview.webm" type="video/webm" loading="lazy">
+            Your browser does not support webm file.
+          </video>
+          <figcaption>
+            The proposed interactive panels which show case the species information and bring life to the static museum.
+          </figcaption>
+        </figure>
+        <p class="paragraph-body">  
+          The project is one of the assignments from the course IAT238, Foundations for for designing interaction. The goal of the project is to propose a way to enhance the interactivity of the museum, and the museum my team chose is the Beaty Biodiversity Museum located inside of UBC campus. We examined the issue from multiple angles and tried several options, the best solution we came up with is the interactive panels and Beaty Quest mobile app. 
+        </p>
+      <div>
     </section>
 
     <section class="element">
-      <h2 class="heading-section">Screens (placeholder)</h2>
+      <h2 class="heading-display">First Solution: Layout Change</h2>
       <div class="project-image-container">
-        <section>
-          <h3 class="heading-card">Interactive Panel</h3>
-          <p class="paragraph-body">A sample “tutorial” style overlay for visitors.</p>
-          <img
-            class="image-link"
-            src="img/Beaty Biodiversity Musemn Project/interactive information panel - tutorial panel.gif"
-            alt="Placeholder interactive information panel GIF"
-          />
-        </section>
+        <p class="paragraph-body">  
+          The museum consists of rows of display cabinets, which form several very narrow aisles with poor lighting, which can be difficult to navigate for the visitor. The layout is also fairly uninspiring, and it doesn't leave many rooms for any interactable installations. 
+          The solution we came up with is to completely change the museum layout. Instead of the rows of the black cabinets, we replaced them with glass display cases with curved glass panels, which improved the visibility within the museum greatly. The floor is color-coded as well, and the visitors can easily tell which section they are at in the museum. 
+        </p>
 
-        <section>
-          <h3 class="heading-card">Mobile Scan</h3>
-          <p class="paragraph-body">A concept image for scanning exhibit information.</p>
-          <img
-            class="image-link"
-            src="img/Beaty Biodiversity Musemn Project/interactive information panel 3 - mobile app scanner.gif"
-            alt="Placeholder mobile scan GIF"
-          />
-        </section>
+        <figure>
+          <img src="img/Beaty Biodiversity Musemn Project/beaty biodiversity museum floor plan.png"
+          alt="the current layout of the Beaty Biodiversity Musemn"
+          class ="image-hero"/> 
+          <figcaption>
+            The current layout of the Beaty Biodiversity Musemn, retrieved from a promotional material of the Beaty Biodiversity Musemn.
+          </figcaption>
+        </figure>
       </div>
 
-      <p class="paragraph-body">
-        See the related concept on
-        <a class="link-text" href="mobile-project.html">Mobile Project</a>.
-      </p>
+      <div class="project-image-container">
+        <figure>
+          <img src="img/Beaty Biodiversity Musemn Project/solution 1 - layout change.png"
+          alt="a mock up of the new layout for the Beaty Biodiversity Musemn"
+          class ="image-hero"/> 
+          <figcaption>
+            A mock up of the proposed layout for the Beaty Biodiversity Museum. The layout has more room for the visitor to traverse through musumn, also it boost visibility considerably
+          </figcaption>
+        </figure>
+
+        <p class="paragraph-body">  
+          The issue of this solution is it doesn't bring new interactivity to the museum, as the museum still has to rely on the same specimen and activity it already has, just a different way to display them. This solution merely makes the museum more approachable, and not much else.
+        </p>
+      <div>
+    </section>
+
+
+
+    <section class="element">
+      <h2 class="heading-display">Second Solution: Arcade Machines</h2>
+      <div class="project-image-container">
+        <figure>
+          <img src="img/Beaty Biodiversity Musemn Project/solution 2 - arcade machine.png"
+          alt="a mock up of the new layout for the Beaty Biodiversity Musemn"
+          class ="image-hero"/> 
+          <figcaption>
+            A mock up of the Arcade machines for the vistor to play and learn at the same time
+          </figcaption>
+        </figure>
+        <p class="paragraph-body">  
+          We re-examine the case and find out that the museum itself doesn't have too many interactive installations, and we wish to focus on this issue next. The main way that the visitors interact with the museum is to read the plaque on the display case, and occasionally there are some monitors nearby to provide additional information about the species around them; but all in all, the visitors have to do lots of reading to gain knowledge, which is more in line with the traditional museum. Through our observation, we realized some of the younger visitors tend to get bored with what the museum is offering, so we came up with a solution for them to learn through gameplay. The arcade machines are the proposal we created. Each machine came with different video games to learn about ecological topics such as endangered species and their shrinking habitat. The proposal is on the right track; however, since we frame the children as the target audience this time, we ignore a large portion of the visitors. We aim to bring a broader audience for our next solution.
+        </p>
+      <div>
+    </section>
+
+
+
+    <section class="element">
+      <h2 class="heading-display">Final Solution: Interactive panel</h2>
+      <div class="project-image-container">
+        <p class="paragraph-body">  
+          During our visit to the museum, we found that the museum is fairly static, the visitors typically leave after they view some of the most impressive species before they even walk through every aisle (most of the aisle contains dead aquatic species preserved in jars, which admittedly they are not the most exciting things to see). We want to retain the visitor a bit longer by bringing in motion into the museum space
+        </p>
+
+        <figure>
+          <video autoplay loop muted>
+            <source src="img/Beaty Biodiversity Musemn Project/interactive information panel - tutorial panel.webm" type="video/webm" loading="lazy">
+            Your browser does not support webm file.
+          </video>
+          <figcaption>
+            The tutorial interactive panel would be located near the exhibition entrance, the visitor can learn how to operate the panel from here
+          </figcaption>
+        </figure>
+        </figure>
+      </div>
+
+      <div class="project-image-container">
+        <figure>
+          <video autoplay loop muted>
+            <source src="img/Beaty Biodiversity Musemn Project/interactive information panel 5 - quiz panel operation.webm" type="video/webm" loading="lazy">
+            Your browser does not support webm file.
+          </video>
+          <figcaption>
+            This panel contain a small quiz for the visitor to interact with, an additional information regarding the biological behaviour is provided for more context
+          </figcaption>
+        </figure>
+
+        <p class="paragraph-body">  
+          The solution we developed is the interactive panels, which replace the information plaque stripes on the side of the display cabinets. The visitor will be able to interact with the touchscreen directly. The panels can provide a lot more information than the traditional plaques (most of them only contain species name), and they show what the species look like in addition to their wrapped and preserved state, which we think would help for people to learn more about biodiversity. Some of the panel will contain quiz and other small activities for visitors as well, we think this can make a trip to the museum a lot more exciting since there are some activities to do rather than just seeing the specimen 
+        </p>
+      <div>
+    </section>
+
+
+    <section class="element">
+      <h2 class="heading-display">Final Solution: Beaty Quest Mobile App</h2>
+      <div class="project-image-container">
+        <p class="paragraph-body">  
+          To aid the interactive panel, we also came up with the companion mobile app which we called Beaty Quest. Beaty Quest has many functions, but the main purpose is to scan species on the panels, and through the image recognition algorithm, the app is able to identify the species for the visitor. The app contains a database which includes all the species currently on display. All species have a detailed page which provides more information if the users want to learn more. The scanning feature also awards points based on the scanned species' conservation status, which the users can exchange for prizes at the gift shop.
+        </p>
+
+        <figure>
+          <img src="img/Beaty Biodiversity Musemn Project/mobile app - camera scanning.png"
+          alt="a mock up of the camera scanning screen of the Beaty Quest mobile app"
+          class ="image-small"/> 
+          <figcaption>
+            The Beaty Quest mobile app allows the user to scan the interactive panel for the name of the species
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="project-image-container">
+        <figure>
+          <video autoplay loop muted>
+            <source src="img/Beaty Biodiversity Musemn Project/interactive information panel 3 - mobile app scanner.webm" type="video/webm" loading="lazy">
+            Your browser does not support webm file.
+          </video>
+          <figcaption>
+            This app also displays additional information for the species, and then it awards the points based on the conservation status of the species
+          </figcaption>
+        </figure>
+
+        <p class="paragraph-body">  
+          The app helps the visitor to be more engaged with museum content. By gamifying the activity, the learning process is done automatically. No longer will the visitor tread through the aisle just because they pay the admission fee, they will be willing to spend more time in the museum because there is an interactive platform to sate their curiosity. Last but not the less, the point system not only let the user know which species is endangered, but also incentify the learning experience as well, since the user will be rewarded with physical prizes by just engaging in the museum activity.
+        </p>
+      <div>
+    </section>
+
+    <section class="element">
+      <h2 class="heading-display">Conclusion</h2>
+      <div class="project-image-container">
+        <figure>
+          <video autoplay loop muted>
+            <source src="img/Beaty Biodiversity Musemn Project/interactive information panel 4 - panel text manipulation.webm" type="video/webm" loading="lazy">
+            Your browser does not support webm file.
+          </video>
+          <figcaption>
+            The interactive panel can be operated to see or hide the additional information of the species
+          </figcaption>
+        </figure>
+
+        <p class="paragraph-body">  
+          Our plan to make Beaty Biodiversity Museum is a success, the interactive panel and the companion app are universally agreed to bring more interactivity to the museum. Although we had to alter the project many times, each iteration brought us close to the goal, and for that, I truly believe that there is a solution for every problem. 
+        </p>
+
+      <div>
     </section>
 
     <footer class="element">
       <p class="paragraph-body">© <span id="year"></span> 
         Ricky Lee.
-        <a class="link-text" href="style-guide.html">View style guide</a>
+        <a class="link-text" href="style-guide.html">◆ View style guide</a>
+        <a class="link-text" href="citation.html">◆View citations</a>
       </p>
     </footer>
 

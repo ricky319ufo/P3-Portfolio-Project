@@ -4,10 +4,24 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 100%;
+img {
+  width: 100%;
+  height: auto; 
 }
 
+figcaption {
+  font-family: "Figtree", sans-serif;
+  color:  #414354;
+  line-height: 1.2rem;
+  margin: 1rem;
+}
+
+video{
+  width: 100%;
+  height: auto; 
+  display: block;
+  border-radius: 0.75rem;
+}
 
 body {
   margin: 0;
@@ -36,7 +50,6 @@ header {
 header h1 {
   font-family: "Alegreya Sans", sans-serif;
   font-size: 2.25rem;
-  letter-spacing: 0.02em;
   margin: 0 0 0.5rem;
 }
 
@@ -54,10 +67,11 @@ section {
 }
 
 .element {
+  
   background: white;
   border: 0.05rem solid black;
   border-radius: 0.75rem;
-  padding: 1.25rem;
+  padding: 2rem;
   margin: 0 0 1rem;
 }
 
@@ -81,18 +95,36 @@ h2 {
 }
 
 p {
-  margin: 0.5rem 0;
+  margin: 0.5rem 0 1rem;
 }
 
+footer.element {
+  margin-top: 2rem;
+}
+
+footer.element p {
+  margin: 0;
+}
 
 /* === Interactive Elements === */
 .link-text {
   color: #46c238;
-  text-decoration: none;
-  text-underline-offset: 0.2em;
+  text-decoration: underline;
 }
 
 .link-text:hover {
+  color: #414354;
+}
+
+.link-text-title {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #46c238;
+  text-decoration: none;
+}
+
+.link-text-title:hover {
   color: #414354;
 }
 
@@ -112,23 +144,50 @@ p {
   background: #46c238;
 }
 
+.image-hero {
+  display: flex;
+  justify-content: center;
+  max-width: 25rem;
+  height: auto;
+}
+
+.image-small {
+  display: flex;
+  justify-content: center;
+  max-width: 10rem;
+  height: auto;
+}
+
+
+
 .image-link {
-  display: inline-block;
+  display: flex;
   border-radius: 0.75rem;
   overflow: hidden;
   border: 0.05rem solid black;
   background: white;
+  max-width: 20rem;
+  transition: transform 150ms ease, border-color 150ms ease;
 }
 
-.image-link img {
-  display: block;
-  max-height: 30rem;
-  max-width: 30rem;
+@media (width < 48rem) {
+  .image-hero {
+    width: 40%;
+    height: auto;
+  }
+
+  .image-link{
+    width: 40%;
+    height: auto;
+  }
 }
+
 
 .image-link:hover {
   border-color: #414354;
+  transform: translateY(-0.15rem);
 }
+
 
 /* === Text Elements === */
 .heading-display,
@@ -143,7 +202,7 @@ h4 {
 
 .heading-display {
   font-size: 2rem;
-  margin: 0;
+  margin-bottom: 2rem;
 }
 
 .heading-section {
@@ -161,6 +220,7 @@ h4 {
   font-family: "Figtree",sans-serif;
   font-size: 1rem;
   color: black;
+  line-height: 2rem;
 }
 
 /* === Combined Elements === */
@@ -212,11 +272,51 @@ nav.main-nav {
   background:  #bfeac0;
 }
 
+/* === Dropdown === */
+.dropdown {
+  border-radius: 0.75rem;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  min-width: 14rem;
+  background: white;
+  border: 0.05rem solid black;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.45rem 0.7rem;
+  border-radius: 0.75rem;
+  border: 0.05rem solid black;
+  background: white;
+}
+
+.dropdown-content a:hover {
+  border-color: #46c238;
+  background: #bfeac0;
+}
+
 /* === Brand Elements === */
 .palette-container,
 .project-image-container {
   display: grid;
-  gap: 1rem;
+  gap: 6rem;
 }
 
 .palette-container {
@@ -225,9 +325,32 @@ nav.main-nav {
 }
 
 .project-image-container {
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-top: 0.75rem;
+  gap: 1rem;
 }
+
+.project-image-container img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 0.55rem;
+  border: 0.05rem solid black;
+}
+
+.project-image-container .image-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+@media (width < 48rem) {
+  .project-image-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 .palette-container section,
 .project-image-container section {
@@ -261,11 +384,4 @@ nav.main-nav {
   background: #414354;
 }
 
-.project-image-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 0.55rem;
-  border: 0.05rem solid black;
-}
 

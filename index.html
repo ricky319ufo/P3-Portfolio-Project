@@ -15,52 +15,78 @@
   <body>
     <header>
       <nav class="main-nav">
-        <a class="main-nav-home" href="index.html">Home</a>
+        <a class="link-text-title" href="index.html">Ricky Lee's Portfolio</a>
         <div class="main-nav-links">
+          <div class="dropdown">
+            <button class="button-nav" type="button">Projects</button>
+            <div class="dropdown-content">
+              <a href="museum-project.html">Museum Project</a>
+              <a href="mobile-project.html">Mobile Project</a>
+            </div>
+          </div>
+
           <a href="about.html">About Me</a>
-          <a href="museum-project.html">Museum Project</a>
-          <a href="mobile-project.html">Mobile Project</a>
+
+          <a href="contact.html">Contact</a>
         </div>
       </nav>
     </header>
 
-    <section id="home" class="element">
-      <h2 class="heading-section">Featured Projects</h2>
+    <div class="project-image-container">
+      <section class="element">
+        <h2 class="heading-section">Welcome to Ricky Lee's Portfolio!</h2>
+        <p class="paragraph-body">
+          I'm a passionate web designer and mobile app developer, 
+          and I believe there is a solution to every problem, let me be your solution today!
+        </p>
+        <img class="image-hero" 
+        src="img/Ricky Lee Photo 1.JPG"
+        alt="front shot photo of Ricky Lee"/> 
+      </section>
 
-      <p class="paragraph-body">
-        These are quick snapshots of projects I’m working on. Each page uses the same style guide
-        and responsive rem-based CSS.
-      </p>
+      <section class="element">
+        <h2 class="heading-section">Featured Projects</h2>
 
-      <div class="project-image-container">
-        <section>
-          <h3 class="heading-card">Museum Project</h3>
-          <p class="paragraph-body">Interactive information panels and guided museum experiences.</p>
-          <a class="image-link" href="museum-project.html">
-            <img
-              src="img/Beaty Biodiversity Musemn Project/20.png"
-              alt="Placeholder museum project screenshot"
-            />
-          </a>
-        </section>
+        <p class="paragraph-body">
+          These are the projects I have worked on.
+          Click on the images to see details
+        </p>
 
-        <section>
-          <h3 class="heading-card">Mobile Project</h3>
-          <p class="paragraph-body">A mobile concept for finding and learning through images.</p>
-          <a class="image-link" href="mobile-project.html">
-            <img
-              src="img/Foodie Buddy Project/IMG_1914.PNG"
-              alt="Placeholder mobile project screenshot"
-            />
-          </a>
-        </section>
-      </div>
-    </section>
+        <div class="project-image-container">
+          <section>
+            <h3 class="heading-card">Museum Project</h3>
+            <p class="paragraph-body">Interactive information panels and guided museum experiences.</p>
+            <a class="image-link" href="museum-project.html">
+              <img
+                src="img/Beaty Biodiversity Musemn Project/mobile app - camera scanning.png"
+                alt="a mock up screenshot of the scanning feature of the mobile app Beaty Quest"
+              />
+            </a>
+          </section>
+
+          <section>
+            <h3 class="heading-card">Mobile Project</h3>
+            <p class="paragraph-body">A mobile concept for finding and learning through images.</p>
+            <a class="image-link" href="mobile-project.html">
+              <img
+                src="img/Foodie Buddy Project/foodie buddy - post show up in feed.PNG"
+                alt="a screenshot of the feeds of mobile app Foodie Buddy"
+              />
+            </a>
+          </section>
+        </div>
+      </section>
+    </div>
+
+    <!--I learn to retrieve the current year using javascript from
+     https://medium.com/@ilearnbydoing/display-current-year-in-website-footer-e3f974a9dbc8 -->
 
     <footer class="element">
       <p class="paragraph-body">© <span id="year"></span> 
         Ricky Lee.
-        <a class="link-text" href="style-guide.html">View style guide</a>
+        <a class="link-text" href="style-guide.html">◆ View style guide</a>
+        <a class="link-text" href="citation.html">◆ View citations</a>
+
       </p>
     </footer>
 
